@@ -1,0 +1,128 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #a8e6e6 0%, #dcedc1 50%, #ffd3b6 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    padding: 4rem 2rem 2rem;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e7f5 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: visible;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.hire-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #e6f7ff;
+    border-radius: 8px;
+}
+
+.hire-section h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.hire-section a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hire-section a:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 6rem 1rem 2rem;
+        width: 90%;
+    }
+    
+    img {
+        width: 120px;
+        height: 120px;
+        top: -60px;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .hire-section a {
+        width: 80%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+    
+    .hire-section a {
+        width: 100%;
+    }
+}
